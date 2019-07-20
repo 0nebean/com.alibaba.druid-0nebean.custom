@@ -13,7 +13,9 @@ Introduction
 - 允许执行 drop function,create function等操作
 
 
+
 Documentation
+---
 ```
         ......
         WallConfig wallConfig = new WallConfig();
