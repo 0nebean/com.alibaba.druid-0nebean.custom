@@ -13,6 +13,7 @@ Introduction
 
 Documentation
 ---
+- config
 ```
         ......
         WallConfig wallConfig = new WallConfig();
@@ -32,5 +33,5 @@ Documentation
         ......
 ```
 ---
-# [druid github link](https://github.com/alibaba/druid.git)
+# [com.alibaba.druid](https://github.com/alibaba/druid.git)
 
