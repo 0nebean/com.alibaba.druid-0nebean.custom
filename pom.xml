@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.alibaba</groupId>
 	<artifactId>druid</artifactId>
-	<version>1.1.13-0neBean-custom-SNAPSHOT</version>
+	<version>1.0.31-0neBean-custom-SNAPSHOT</version>
 
 	<packaging>jar</packaging>
 	<name>druid</name>
@@ -75,14 +75,14 @@
 
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
+			<id>repo-private</id>
 			<name>Nexus Release Repository</name>
-			<url>http://ek-nexus.eakay.cn/nexus/content/repositories/releases/</url>
+			<url>http://nexus.onebean.net:8082/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
+			<id>repo-private</id>
 			<name>Nexus Snapshot Repository</name>
-			<url>http://ek-nexus.eakay.cn/nexus/content/repositories/snapshots/</url>
+			<url>http://nexus.onebean.net:8082/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<build>
@@ -744,4 +744,5 @@
 		</dependency>
 
 	</dependencies>
+
 </project>
