@@ -21,6 +21,8 @@
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.6</jdk.version>
+		<repo.snapshots.url>https://nexus.onebean.net:8089/repository/maven-snapshots/</repo.snapshots.url>
+		<repo.releases.url>https://nexus.onebean.net:8089/repository/maven-releases/</repo.releases.url>
 	</properties>
 
 	<repositories>
@@ -75,14 +77,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>repo-private</id>
-			<name>Nexus Release Repository</name>
-			<url>http://nexus.onebean.net:8082/repository/maven-releases/</url>
+			<id>repo-nexus</id>
+			<url>${repo.releases.url}</url>
 		</repository>
 		<snapshotRepository>
-			<id>repo-private</id>
-			<name>Nexus Snapshot Repository</name>
-			<url>http://nexus.onebean.net:8082/repository/maven-snapshots/</url>
+			<id>repo-nexus</id>
+			<url>${repo.snapshots.url}</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<build>
